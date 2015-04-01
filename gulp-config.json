@@ -1,0 +1,9 @@
+{
+	"wwwDir"           : "/var/www/vendor/joomla/joomla-cms",
+	"browserSyncProxy" : "before-after-slideshow.dev",
+	"extensions"       : {
+		"modules"    : {
+            "frontend"       : ["before-after-slideshow"]
+        }
+	}
+}
