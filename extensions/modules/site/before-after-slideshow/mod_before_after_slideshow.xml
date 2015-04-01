@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>mod_before_after_slideshow</name>
+	<author>Iván Ramos Jiménez</author>
+	<creationDate>March 2015</creationDate>
+	<copyright>Copyright (C) 2015 Iván Ramos Jiménez. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@ivan.ramos.name</authorEmail>
+	<authorUrl>ivan.ramos.name</authorUrl>
+	<version>1.0.0</version>
+	<description>MOD_BEFORE_AFTER_SLIDESHOW_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_before_after_slideshow">mod_before_after_slideshow.php</filename>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_before_after_slideshow.xml</filename>
+	</files>
+	<media folder="media">
+		<folder>mod_before_after_slideshow</folder>
+	</media>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.mod_before_after_slideshow.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_before_after_slideshow.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="height"
+					type="text"
+					default="480px"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_HEIGHT_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_HEIGHT_DESC" />
+			</fieldset>
+			
+			<fieldset name="images" label="MOD_BEFORE_AFTER_SLIDESHOW_IMAGES_LABEL">
+				<field
+					name="image1_before"
+					type="media"
+					default="media/mod_before_after_slideshow/images/300-before.jpg"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_BEFORE_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_BEFORE_DESC" />
+				
+				<field
+					name="image1_after"
+					type="media"
+					default="media/mod_before_after_slideshow/images/300-after.jpg"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_AFTER_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_AFTER_DESC" />
+					
+				<field name="spacer1" type="spacer" hr="true" />
+				
+				<field
+					name="image2_before"
+					type="media"
+					default="media/mod_before_after_slideshow/images/avengers-before.jpg"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_BEFORE_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_BEFORE_DESC" />
+				
+				<field
+					name="image2_after"
+					type="media"
+					default="media/mod_before_after_slideshow/images/avengers-after.jpg"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_AFTER_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_AFTER_DESC" />
+					
+				<field name="spacer2" type="spacer" hr="true" />
+				
+				<field
+					name="image3_before"
+					type="media"
+					default="media/mod_before_after_slideshow/images/elysium-before.jpg"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_BEFORE_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_BEFORE_DESC" />
+				
+				<field
+					name="image3_after"
+					type="media"
+					default="media/mod_before_after_slideshow/images/elysium-after.jpg"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_AFTER_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_AFTER_DESC" />
+					
+				<field name="spacer3" type="spacer" hr="true" />
+				
+				<field
+					name="image4_before"
+					type="media"
+					default="media/mod_before_after_slideshow/images/godzilla-before.jpg"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_BEFORE_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_BEFORE_DESC" />
+				
+				<field
+					name="image4_after"
+					type="media"
+					default="media/mod_before_after_slideshow/images/godzilla-after.jpg"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_AFTER_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_AFTER_DESC" />
+					
+				<field name="spacer4" type="spacer" hr="true" />
+				
+				<field
+					name="image5_before"
+					type="media"
+					default="media/mod_before_after_slideshow/images/homesman-before.jpg"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_BEFORE_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_BEFORE_DESC" />
+				
+				<field
+					name="image5_after"
+					type="media"
+					default="media/mod_before_after_slideshow/images/homesman-after.jpg"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_AFTER_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_AFTER_DESC" />
+					
+				<field name="spacer5" type="spacer" hr="true" />
+				
+				<field
+					name="image6_before"
+					type="media"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_BEFORE_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_BEFORE_DESC" />
+				
+				<field
+					name="image6_after"
+					type="media"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_AFTER_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_AFTER_DESC" />
+					
+				<field name="spacer6" type="spacer" hr="true" />
+				
+				<field
+					name="image7_before"
+					type="media"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_BEFORE_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_BEFORE_DESC" />
+				
+				<field
+					name="image7_after"
+					type="media"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_AFTER_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_AFTER_DESC" />
+					
+				<field name="spacer7" type="spacer" hr="true" />
+				
+				<field
+					name="image8_before"
+					type="media"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_BEFORE_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_BEFORE_DESC" />
+				
+				<field
+					name="image8_after"
+					type="media"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_AFTER_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_AFTER_DESC" />
+					
+				<field name="spacer8" type="spacer" hr="true" />
+				
+				<field
+					name="image9_before"
+					type="media"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_BEFORE_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_BEFORE_DESC" />
+				
+				<field
+					name="image9_after"
+					type="media"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_AFTER_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_AFTER_DESC" />
+					
+				<field name="spacer9" type="spacer" hr="true" />
+				
+				<field
+					name="image10_before"
+					type="media"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_BEFORE_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_BEFORE_DESC" />
+				
+				<field
+					name="image10_after"
+					type="media"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_AFTER_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGE_AFTER_DESC" />
+					
+			</fieldset>
+			
+			<fieldset name="options" label="MOD_BEFORE_AFTER_SLIDESHOW_OPTIONS_LABEL">
+				<field
+					name="cellSelector"
+					type="text"
+					default=".gallery-cell"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_CELLSELECTOR_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_CELLSELECTOR_DESC" />
+				
+				<field
+					name="initialIndex"
+					type="integer"
+					default="0"
+					first="0"
+					last="20"
+					step="1"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_INITIALINDEX_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_INITIALINDEX_DESC" />
+				
+				<field
+					name="accessibility"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_ACCESSIBILITY_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_ACCESSIBILITY_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				
+				<field
+					name="setGallerySize"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_SETGALLERYSIZE_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_SETGALLERYSIZE_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				
+				<field
+					name="resize"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_REZISE_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_REZISE_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				
+				<field name="spacer11" type="spacer" hr="true" />
+				
+				<field
+					name="cellAlign"
+					type="list"
+					default="center"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_CELLALIGN_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_CELLALIGN_DESC">
+						<option value="left">MOD_BEFORE_AFTER_SLIDESHOW_FIELD_CELLALIGN_VALUE_LEFT</option>
+						<option value="center">MOD_BEFORE_AFTER_SLIDESHOW_FIELD_CELLALIGN_VALUE_CENTER</option>
+						<option value="right">MOD_BEFORE_AFTER_SLIDESHOW_FIELD_CELLALIGN_VALUE_RIGHT</option>
+				</field>
+				
+				<field
+					name="contain"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="0"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_CONTAIN_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_CONTAIN_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+					
+				<field
+					name="imagesLoaded"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGESLOADED_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_IMAGESLOADED_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				
+				<field
+					name="percentPosition"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="0"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_PERCENTPOSITION_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_PERCENTPOSITION_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				
+				<field
+					name="rightToLeft"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="0"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_RIGHTTOLEFT_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_RIGHTTOLEFT_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				
+				<field name="spacer12" type="spacer" hr="true" />
+				
+				<field
+					name="draggable"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="0"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_DRAGGABLE_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_DRAGGABLE_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				
+				<field
+					name="freeScroll"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_FREESCROLL_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_FREESCROLL_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				
+				<field name="spacer13" type="spacer" hr="true" />
+				
+				<field
+					name="wrapAround"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_WRAPAROUND_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_WRAPAROUND_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				
+				<field
+					name="autoPlay"
+					type="text"
+					default="false"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_AUTOPLAY_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_AUTOPLAY_DESC" />
+				
+				<field
+					name="watchCSS"
+					type="text"
+					default="false"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_WATCHCSS_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_WATCHCSS_DESC" />
+				
+				<field
+					name="asNavFor"
+					type="text"
+					default=""
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_ASNAVFOR_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_ASNAVFOR_DESC" />
+				
+				<field name="spacer14" type="spacer" hr="true" />
+				
+				<field
+					name="prevNextButtons"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_PREVNEXTBUTTONS_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_PREVNEXTBUTTONS_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				
+				<field
+					name="pageDots"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_PAGEDOTS_LABEL"
+					description="MOD_BEFORE_AFTER_SLIDESHOW_FIELD_PAGEDOTS_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+					
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC"
+				>
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static"
+				>
+					<option value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
