@@ -32,7 +32,7 @@ vagrantfile-local:
             TzaDfXPnoxtv:
                 owner: www-data
                 group: www-data
-                source: 'D:\Proyectos\Personales\before-after-slideshow'
+                source: 'D:\Proyectos\Personales\mod_before_after_slideshow'
                 target: /var/www
                 sync_type: default
                 rsync:
