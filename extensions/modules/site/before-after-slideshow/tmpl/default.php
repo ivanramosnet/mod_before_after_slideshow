@@ -9,8 +9,12 @@
 
 defined('_JEXEC') or die;
 
-JHtml::stylesheet('mod_before_after_slideshow/style.min.css', array(), true);
-JHtml::script('mod_before_after_slideshow/script.min.js', false, true);
+JHtml::_('jquery.framework');
+
+JHtml::stylesheet('mod_before_after_slideshow/flickity.min.css', array(), true);
+JHtml::script('mod_before_after_slideshow/flickity.pkgd.js', false, true);
+JHtml::stylesheet('mod_before_after_slideshow/before-after.css', array(), true);
+JHtml::script('mod_before_after_slideshow/before-after.js', false, true);
 
 $accessibility = $params->get("accessibility", 1)?"true":"false";
 $setGallerySize = $params->get("setGallerySize", 1)?"true":"false";
