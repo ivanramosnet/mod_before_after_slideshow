@@ -1,8 +1,8 @@
 ---
 vagrantfile-local:
     vm:
-        box: puphpet/ubuntu1404-x64
-        box_url: puphpet/ubuntu1404-x64
+        box: puphpet/ubuntu1404-x32
+        box_url: puphpet/ubuntu1404-x32
         hostname: ''
         memory: '512'
         cpus: '1'
